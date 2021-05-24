@@ -1,39 +1,59 @@
 <!DOCTYPE html>
-<center><h2>CatPhotoApp</h2></center>
-<main><center>
-  <p>Click here to view more <a href="#">cat photos</a>.</p>
+<html lang="en">
+  <head>
+    <title>Testsitestuff></title>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet"/>
+    <style>
+      .red-text {
+        color: red;
+      }
 
-  <a href="#"><img src="https://www.bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+      h2 {
+        font-family: "Zilla Slab";
+        font-color: black;
+      }
 
-  <p>Things cats love:</p>
-  <ul>
-    <li>cat nips</li>
-    <li>laser pointers</li>
-    <li>lasagna</li>
-  </ul>
-  <p>This is a placeholder text</p>
-  <p>Top 3 things cats hate:</p>
-  <ol>
-    <li>flea treatment</li>
-    <li>thunder</li>
-    <li>other cats</li>
-  </ol>
-  <h1>Cat photo image form</h1>
-  <form action="https://www.freecatphotoapp.com/submit-cat-photo">
-    <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
-    <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
-    <input type="text" placeholder="cat photo URL" required>
-    <button type="submit">Submit</button>
-    <label for = "grumpy">
-      <input id = "grumpy" type = "checkbox" name = "personality"> grumpy
-    </label>
-    <label for = "playful">
-      <input id = "playful" type =
-"checkbox" name = "personality"> playful
-    </label>
-    <label for = "kalm">
-      <input id = "kalm" type = "checkbox" name = "personality"> kalm
-    </label>
-  </form>
-  <center>
-</main>
+      p {
+        font-size: 16px;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h2>CatPhotoApp</h2>
+      <main>
+        <p class="red-text">
+          Click here to view more <a href="#">cat photos</a>.
+        </p>
+        <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."/></a>
+        <div>
+          <p>Things cats love:</p>
+          <ul>
+            <li>cat nip</li>
+            <li>laser pointers</li>
+            <li>lasagna</li>
+          </ul>
+          <p>Top 3 things cats hate:</p>
+          <ol>
+            <li>flea treatment</li>
+            <li>thunder</li>
+            <li>other cats</li>
+          </ol>
+        </div>
+
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <label
+            ><input type="radio" name="indoor-outdoor" checked/> Indoor</label>
+          <label><input type="radio" name="indoor-outdoor"/> Outdoor</label>
+          <label
+            ><input type="checkbox" name="personality" checked/> Loving</label>
+          <label><input type="checkbox" name="personality"/> Lazy</label>
+          <label><input type="checkbox" name="personality"/> Energetic</label>
+          <input type="text" placeholder="cat photo URL" required/>
+          <button type="submit">Submit</button>
+        </form>
+      </main>
+    </center>
+  </body>
+</html>
